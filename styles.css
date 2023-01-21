@@ -7,9 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  /* font-family: "Roboto", sans-serif; */
   color: #fff;
 }
 
@@ -61,100 +67,80 @@ a {
 /*///////// Hero Section Styles Starts Here  /////////*/
 .page-wraper {
   background-color: #000;
-  height: auto;
-}
-
-.hero-container {
-  position: relative;
-  height: auto;
-}
-.hero-img-container {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-}
-
-.hero-image {
-  height: 100%;
-  object-fit: cover;
   width: 100%;
+  margin: 0 auto;
 }
 
-.hero-img-gradient {
+.hero-section {
+  /* width: 100%; */
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8) 0,
-    transparent 60%,
-    rgba(0, 0, 0, 0.8)
-  );
-  position: absolute;
-  height: 693.594px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+      60deg,
+      rgba(0, 0, 0, 0.8) 0,
+      transparent 300%,
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./images/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
 }
 
 header {
-  /* height: 84px; */
+  max-width: 192rem;
   background-color: transparent;
-  padding-top: 20px;
-  position: relative;
-  right: 0;
-  top: 0;
+  padding: 1rem 2.5rem 0 4rem;
+  margin: 0 auto;
+  height: 8rem;
   width: 100%;
-  z-index: 10;
+  align-items: center;
+  align-items: center;
+  display: flex;
 }
 
 .heading {
   height: 100%;
-  margin: 0 3.5rem;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
-  width: 134px;
-  height: 64px;
+  height: 90px;
 }
 
 .sign-in {
-  float: right;
+  font-size: 1.6rem;
   background-color: #e50914;
   padding: 7px 17px;
   border-radius: 3px;
   color: #fff;
-  margin-top: 0.5rem;
 }
 
 .hero-text,
 .hero-text h2,
 button {
-  font-size: 1.625rem;
+  font-size: 2.6rem;
 }
 .hero-text {
   margin: 0 auto;
-  max-width: 950px;
-  padding: 75px 0;
+  max-width: 95rem;
+  padding: 7.5rem 0;
   position: relative;
   text-align: center;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
+  letter-spacing: -1px;
 }
 
 .hero-text h1 {
-  font-size: 3.125rem;
   margin: 0 auto;
+  font-size: 5rem;
   max-width: 640px;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 .hero-text h2 {
-  font-size: 1.625rem;
+  /* font-size: 2.6rem; */
   margin: 1rem auto;
   max-width: 640px;
   font-weight: 400;
@@ -170,9 +156,8 @@ form {
 }
 
 .form-title {
-  font-size: 1.1rem;
+  font-size: 1.9rem;
   max-width: none;
-
   font-weight: 400;
   margin: 0 auto;
   text-align: center;
@@ -181,32 +166,39 @@ form {
 }
 
 .form-input-sec {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   margin: 0 auto;
   text-align: center;
-  height: 60px;
-  width: 662.96px;
+  min-height: 6rem;
+  /* width: 662.96px; */
 }
 
 .input-div {
   background: white;
   color: black;
+  min-width: 450px;
+  padding: 1rem 1rem 0;
 }
 input {
   height: 100%;
   width: 100%;
   outline: none;
   padding: 5px;
+  border: none;
 }
 input::placeholder {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .btn-div {
   background: #e50914;
   display: flex;
   justify-content: center;
+  font-size: 2.6rem;
+  border-left: 1px solid #333;
+  padding: 0 1.6rem;
+  min-width: 8rem;
 }
 
 button {
@@ -238,15 +230,15 @@ button {
 }
 
 .card-title {
-  font-size: 3.125rem;
+  font-size: 5rem;
   line-height: 1.1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-weight: 500;
-  margin: 0 0 0.4em;
+  /* margin: 0 0 0.64em; */
 }
 
 .card-text {
-  font-size: 1.625rem;
+  font-size: 2.6rem;
   font-weight: 400;
   margin: 0.75em 0 0.25em;
 }
@@ -290,7 +282,7 @@ video {
 
 .download-animation-card {
   width: 330.97px;
-  height: 96px;
+  /* height: 96px; */
   background: #000;
   border: 2px solid hsla(0, 0%, 100%, 0.25);
   border-radius: 0.75em;
@@ -298,9 +290,10 @@ video {
   position: absolute;
   top: 17rem;
   left: 7rem;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  justify-items: center;
 }
 
 .stranger-things-img img {
@@ -344,15 +337,43 @@ video {
   margin-bottom: 8px;
 }
 
-details {
+.question {
   cursor: pointer;
   background: #303030;
   margin-top: 4px;
-  padding: 1.1rem;
-  font-size: 1.625rem;
+  padding: 2rem;
+  font-size: 2.2rem;
 }
 
-details > p {
+.awnser {
+  font-size: 2.2rem;
+  background-color: #333;
+  border-top: 1px solid black;
+  padding: 2rem;
+  display: none;
+  /* line-height: 1.4; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.plus,
+.close {
+  font-size: 4rem;
+}
+
+.close {
+  display: none;
+}
+
+.active .close {
+  display: block;
+}
+.active .plus {
+  display: none;
+}
+
+/* details > p {
   padding-top: 2rem;
 }
 
@@ -360,16 +381,17 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.faq-btn {
+/* .faq-btn {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .faq-section form {
   max-width: none;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  letter-spacing: -1px;
 }
 
 form i {
@@ -395,6 +417,7 @@ footer {
 
 .footer-heading {
   margin: 0 0 30px;
+  font-size: 1.5rem;
 }
 
 .footer-links-container {
@@ -412,7 +435,7 @@ footer {
 }
 
 .footer-ul > li a {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #737373;
 }
 

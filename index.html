@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script defer src="script.js"></script>
     <title>NETFLIX</title>
   </head>
   <body>
     <div class="page-wraper">
       <section class="hero-section border-bottom">
         <div class="hero-container">
-          <header>
-            <div class="heading">
+          <header class="flex ">
+            <div class="heading flex  between">
               <img class="logo" src="./images/netflix-logo.png" alt="" />
               <a class="sign-in" href="">Sign in</a>
             </div>
@@ -22,8 +23,8 @@
           <div class="hero-text-wraper container">
 <div class="hero-text">
             <h1>
-              Unlimited Movies, TV <br />
-              shows, and more <br />
+              Unlimited movies, TV 
+              shows, and more 
             </h1>
             <h2>Watch anywhere. Cancle anytime</h2>
             <form action="">
@@ -47,9 +48,9 @@
           </div>
           
           </div>
-          <div class="hero-img-container">
+          <!-- <div class="hero-img-container">
             <img class="hero-image" src="./images/hero-img.jpg" alt="" />
-          </div>
+          </div> -->
           <div class="hero-img-gradient"></div>
         </div>
       </section>
@@ -78,7 +79,7 @@
         </div>
       </section>
       <section class="section-2 container border-bottom">
-        <div class="section-2-container flex between">
+        <div class="section-2-container flex between strange">
           <div class="section-2-animation">
             <div class="download-animation">
                 <img src="./images/mobile-0819.jpg" alt="" />
@@ -136,72 +137,79 @@
             <div class="faq-heading">
                 <h2 class="card-title">Frequently Asked Questions</h2>
             </div>
-            <div class="faqs-holder">
-            <details class="details">
-              <summary class="faq-btn"><span>What is Netflix?</span>
-              <i class="fa fa-plus" aria-hidden="true"></i></summary>
-              <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. <br> <br>
+            <div class="accordion-item faq faqs-holder">
+              <div class="question   flex between">
+                <p class="q">What is Netflix?</p>
+                <ion-icon class="plus" name="add-outline"></ion-icon>
+                <ion-icon  class="close" name="close-outline"></ion-icon>
+              </div>
+              <div class="awnser">
+                <p>
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. <br> <br>
             You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
-            </details>
+                  </p>
+          </div>
             </div>
+            <div class="accordion-item faq faqs-holder">
+              <div class="question   flex between">
+                <p class="q">How much does Netflix Cost?</p>
+                <ion-icon class="plus" name="add-outline"></ion-icon>
+                <ion-icon  class="close" name="close-outline"></ion-icon>
+              </div>
+              <div class="awnser">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.</p>
 
-            <div class="faqs-holder">
-            <details>    
-              <summary class="faq-btn">
-                  <span>How much does Netflix Cost?</span>
-              <i class="fa fa-plus" aria-hidden="true"></i>
-                </summary>
-                              <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.</p>
-
-              </details>
+          </div>
             </div>
-            <div class="faqs-holder">
-            <details>    
-              <summary class="faq-btn">
-                  <span>Where can I watch?</span>
-              <i class="fa fa-plus" aria-hidden="true"></i>
-                </summary>
-                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+            <div class="accordion-item faq faqs-holder">
+              <div class="question   flex between">
+                <p class="q">Where can I watch?</p>
+                <ion-icon class="plus" name="add-outline"></ion-icon>
+                <ion-icon  class="close" name="close-outline"></ion-icon>
+              </div>
+              <div class="awnser">
+               <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
               <br><br>
               You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
-              </details>
+          </div>
             </div>
+            <div class="accordion-item faq faqs-holder">
+              <div class="question   flex between">
+                <p class="q">How do I cancle?</p>
+                <ion-icon class="plus" name="add-outline"></ion-icon>
+                <ion-icon  class="close" name="close-outline"></ion-icon>
+              </div>
+              <div class="awnser">
+                 <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
 
-            <div class="faqs-holder">
-            <details>    
-              <summary class="faq-btn">
-                  <span>How do I cancle?</span>
-              <i class="fa fa-plus" aria-hidden="true"></i>
-                </summary>
-                <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
-              </details>
+          </div>
             </div>
+             <div class="accordion-item faq faqs-holder">
+              <div class="question   flex between">
+                <p class="q">What can I watch on Netflix?</p>
+                <ion-icon class="plus" name="add-outline"></ion-icon>
+                <ion-icon  class="close" name="close-outline"></ion-icon>
+              </div>
+              <div class="awnser">
+                                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
 
-            <div class="faqs-holder">  
-               <details>    
-              <summary class="faq-btn">
-                  <span>What can I watch on Netflix?</span>
-              <i class="fa fa-plus" aria-hidden="true"></i>
-                </summary>
-                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
-              </details>
+          </div>
             </div>
-
-            <div class="faqs-holder"> 
-              <details>
-                <summary class="faq-btn">
-                  <span>Is Netflix good for kids?</span>
-              <i class="fa fa-plus" aria-hidden="true"></i>
-                </summary>
+             <div class="accordion-item faq faqs-holder">
+              <div class="question   flex between">
+                <p class="q">Is Netflix good for kids?</p>
+                <ion-icon class="plus" name="add-outline"></ion-icon>
+                <ion-icon  class="close" name="close-outline"></ion-icon>
+              </div>
+              <div class="awnser">
                 <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. <br> <br>
                 Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
                 </p>
-              </details>
+          </div>
             </div>
-
-           
         </div>
-     <form action="">
+         
+            <form action="">
               <h3 class="form-title">
                 Ready to watch? Enter your email to create or restart your
                 membership.
@@ -210,12 +218,12 @@
                 <div class="input-div">
                   <label for="">
                     <input type="email" placeholder="Enter address" />
-                     <label for="email">Enter address </label>
+                     <label for="email"> </label>
                   </label>
                 </div>
                 <div class="btn-div">
                   <button>Get Started <i class="fa fa-chevron-right" aria-hidden="true"></i>
-</button>
+                  </button>
                 </div>
               </div>
             </form>
@@ -224,7 +232,7 @@
           <div class="footer-content-holder">
             <p class="footer-heading">Questions? Contact us</p>
             <div class="footer-links-container">
-<ul class="footer-ul">
+      <ul class="footer-ul">
               <li class="footer-link"><a href=""><span>FAQ</span>
                 </a></li>
               <li class="footer-link"><a href="">Help Center</a></li>
@@ -247,5 +255,13 @@
           </div>
         </footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

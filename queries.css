@@ -1,0 +1,250 @@
+/* *************************** */
+/* BELOW 1344px (Smaller desktop)  */
+/* *************************** */
+@media (max-width: 84em) {
+  .hero-text h1 {
+    /* font-size: 3.125rem; */
+  }
+  .section-2-text {
+    line-height: 1.3;
+  }
+}
+
+/* *************************** */
+/* BELOW 768px (Smaller desktop)  */
+/* *************************** */
+@media (max-width: 48em) {
+  .form-input-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-title {
+    font-size: 2.3rem;
+    max-width: 80%;
+  }
+
+  .input-div {
+    padding: 1.2rem;
+    min-width: 500px;
+  }
+
+  .btn-div {
+    min-width: none;
+    margin-top: 2rem;
+    border-radius: 3px;
+  }
+
+  .btn-div button {
+    font-size: 1.5rem;
+    padding: 1.2rem 0.3rem;
+    border-radius: 5px;
+  }
+
+  .section-2-container,
+  .watch-container,
+  .kids-section-container {
+    flex-direction: column;
+  }
+
+  .section-2-text,
+  .watch,
+  .kids-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-title {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: 1.95rem;
+  }
+
+  .section-2-animation {
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  video {
+    /* display: none; */
+  }
+
+  .animation-container {
+    left: 0;
+    width: 100%;
+  }
+
+  .strange,
+  .kids-section-container {
+    flex-direction: column-reverse;
+  }
+  .download-animation-card {
+    top: 35rem;
+    width: 65%;
+    left: 12rem;
+  }
+  .download-text {
+    font-size: 1.5rem;
+  }
+
+  .watch {
+    text-align: center;
+  }
+
+  .lg {
+    width: 100%;
+  }
+
+  .watch-img {
+    display: none;
+  }
+
+  .kids-img {
+    width: 90%;
+  }
+
+  .faqs-holder {
+    width: 90%;
+  }
+
+  .question {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+  .footer-ul > li a {
+    font-size: 11.5px;
+  }
+}
+
+/* *************************** */
+/* BELOW 600px (Phones)  */
+/* *************************** */
+
+@media (max-width: 38em) {
+  header {
+    padding: 0 1.8rem 0 2rem;
+  }
+
+  .logo {
+    height: 65px;
+  }
+  .sign-in {
+    padding: 3px 7px;
+    font-size: 1.5rem;
+  }
+
+  .hero-section .container {
+    padding: 0 20px;
+  }
+
+  .hero-text {
+    width: 100%;
+    /* padding: 5rem 0; */
+    padding-top: 6rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+    /* letter-spacing: 1px; */
+  }
+
+  .form-input-sec {
+    width: 100%;
+  }
+  .input-div {
+    min-width: 100%;
+    /* padding: 8rem; */
+    border-radius: 2px;
+  }
+  .form-title {
+    font-size: 1.65rem;
+    padding: 0 0 10px;
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+
+  .container {
+    padding: 70px 20px;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card-text {
+    font-size: 1.6rem;
+  }
+
+  .download-animation-card {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 0;
+    border-radius: 15px;
+    width: 280px;
+  }
+
+  .download-animate {
+    background-size: 150%;
+  }
+
+  .download-text {
+    font-size: 1.3rem;
+  }
+
+  .faq-section.container {
+    padding: 70px 0;
+  }
+
+  .faq-heading {
+    text-align: center;
+  }
+
+  .faqs-holder {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  .accordion-item p {
+    font-size: 1.8rem;
+  }
+  .plus,
+  .close {
+    font-size: 3rem;
+  }
+
+  .faq-heading .card-title {
+    padding: 0 30px;
+  }
+  .faq-section form {
+    margin-top: 1.5rem;
+  }
+  .input-div {
+    min-width: 90%;
+  }
+
+  footer.container {
+    padding: 50px 20px 20px;
+  }
+
+  .footer-content-holder {
+    padding-left: 10px;
+  }
+
+  .footer-links-container {
+    width: 100%;
+  }
+  /* .footer-ul > li a {
+    font-size: 1.35rem;
+  } */
+  .footer-link {
+    width: 46%;
+  }
+}
